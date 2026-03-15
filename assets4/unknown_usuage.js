@@ -1,4 +1,5 @@
 // First 800 lines of asset4
+// You may notice at line 243 there is a long string. That is actually one of GoGuardian's CRC checksum table. The sum it is checking is ?sum=, which is behind the ?ctx=. 
 A.exports = function() {
     "use strict";
     var A = function(e, t) {
