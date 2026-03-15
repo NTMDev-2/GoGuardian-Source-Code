@@ -1,4 +1,5 @@
 // Code of GoGuardian's iframe-blocker, leaked here.
+// Can be found in file: https://extension.goguardian/extension.html
 
 !function(e){var n={};function t(i){if(n[i])return n[i].exports;var a=n[i]={i:i,l:!1,exports:{}};return e[i].call(a.exports,a,a.exports,t),a.l=!0,a.exports}
 t.m=e,t.c=n,t.d=function(e,n,i){t.o(e,n)||Object.defineProperty(e,n,{enumerable:!0,get:i})},
