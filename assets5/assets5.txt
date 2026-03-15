@@ -1,0 +1,9 @@
+This is the fifth and last part of GoGuardian's source code, after its Fouth license:
+/*!
+ * Snowball JavaScript Library v0.3
+ * http://code.google.com/p/urim/
+ * http://snowball.tartarus.org/
+ *
+ * Copyright 2010, Oleg Mazko
+ * http://www.mozilla.org/MPL/
+ */
