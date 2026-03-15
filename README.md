@@ -1,4 +1,4 @@
-# GoGuardian-Source-Code
+# GoGuardian FrontEnd Code
 **THIS IS ONLY A FRONT-END LEAK**
 
 GoGuardian has been terroizing students from Day 1. 
