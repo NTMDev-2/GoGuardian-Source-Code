@@ -1,0 +1,37 @@
+Please note this will vary depending on district and device management. I am showing the settings my district is using. For obivious reasoning, such district is private.
+gg_policy GoGuardian cookie, leaked here.
+
+features{
+  assetUseNativeScreenshots: false
+  contextualScreenshotsEnabled: true
+  smartAlertsForProxiesEnabled: true
+  smartAlertsForProxiesLayer2Enabled: true
+  smartAlertsUseReducedPredictionTime: false
+}
+flaggedTerms{
+  ... (Not shown here due to: Inappropriate content)
+  (This Array is 418 elements long. It contains all flagged terms that GoGuardian will automatically report to the device Admin)
+}
+privacySettings{
+  showPrivacyBanner: false
+}
+schedulingSettings{
+  filterInSchoolOnly: false
+  inSchoolConditionsEnabled: true
+  inSchoolHours: true (Example: 6:00AM - 10:00PM)
+  inSchoolIPRanges: true
+  monitorInSchoolOnly: false
+}
+smartAlerts{
+  blockedCategories{
+    0: "self-harm"
+  }
+  proxyModelVersion: "1.0.0"
+  safetyNetEnabled: false
+}
+videoSettings{ (Filtering for Youtube)
+  blockComments: true
+  blockLiveChat: true
+  blockSidebar: true
+  filteringEnabled: true
+}
