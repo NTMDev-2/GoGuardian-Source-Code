@@ -48,6 +48,6 @@ LOGS_ENDPOINT: Where all GoGuardian logs go to.
 POLICY_ENDPOINT: [UNKNOWN USUAGE]
 POLICY_FETCH_INTERVAL: [UNKNOWN USUAGE] Most likely how fast GoGuardian retrieves information from POLICY_ENDPOINT. Set to 900,000, or 9e5.
 POLICY_SESSION_STORAGE_KEY: 
-
+*/
 
 
