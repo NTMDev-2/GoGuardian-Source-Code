@@ -1,4 +1,4 @@
-This is the fourth part of GoGuardian's source code, after its Third license:
+This is the fourth part of GoGuardian's main source code, after its Third license:
 /*!
  * html2canvas-pro 1.5.12 <https://yorickshan.github.io/html2canvas-pro/>
  * Copyright (c) 2024-present yorickshan and html2canvas-pro contributors
