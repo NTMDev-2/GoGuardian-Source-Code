@@ -1,0 +1,7 @@
+This is the second part of GoGuardian's source code, after its First license:
+/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <http://feross.org>
+ * @license  MIT
+*/
