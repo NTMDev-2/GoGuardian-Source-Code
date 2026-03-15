@@ -1,0 +1,1 @@
+This first part of GoGuardian's main source code defines all needed variables and URLS for monitoring. 
