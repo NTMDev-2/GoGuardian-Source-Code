@@ -1,4 +1,4 @@
-This is the third part of GoGuardian's source code, after its Second license:
+This is the third part of GoGuardian's main source code, after its Second license:
 /*!
 	query-string
 	Parse and stringify URL query strings
