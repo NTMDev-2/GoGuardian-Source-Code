@@ -11,3 +11,6 @@ Most statements that EFF claims about the techinical side of GoGuardian has been
 ## Reading GoGuardian Info
 When you visit a page that has been blocked by GoGuardian, it will end with ?ctx={...}
 To gain information about this block and the reason for it, copy the ENTIRE part after the "=". Then, put this into a [Base64 decoder](https://www.base64decode.org/), which will reveal hidden meta data about the current restricted site. 
+
+## The GoGuardian Documentation
+For a detailed explanation on GoGuardian and how it works, go to this [Google Doc](https://docs.google.com/document/d/1-RSrTeqruhyV51QhjgsJUHuXVKc3sQymY87V9Uiqomo/edit?usp=sharing).
