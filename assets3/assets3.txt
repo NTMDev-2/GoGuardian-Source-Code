@@ -1,0 +1,8 @@
+This is the third part of GoGuardian's source code, after its Second license:
+/*!
+	query-string
+	Parse and stringify URL query strings
+	https://github.com/sindresorhus/query-string
+	by Sindre Sorhus
+	MIT License
+*/
