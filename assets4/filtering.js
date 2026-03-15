@@ -1,5 +1,6 @@
-// 6001 - 6214
-if (this.isCurrEntityExpired()) this.refreshCurrEntity();
+// 6001 - 6281
+// This is preparing for the check sum check, using CRC8, dallas-1-wire, CRC16, CCITT, CRC-16-MODBUS, KERMIT, CRC24, JAM
+            if (this.isCurrEntityExpired()) this.refreshCurrEntity();
                     else {
                         var A = this.currEntity.entity.viewings;
                         if (!A || !A[A.length - 1]) return this.metrics.increment("entity_manager.update_viewing.current_viewing_undefined"), this.logger.warn("EntityManager.updateViewing called without a current viewing"), this.createViewing();
@@ -59,7 +60,7 @@ function(A, e, t) {
         }
 
         function s(A) {
-            switch (A) {
+            switch (A) { // These are all the possible block reasons for GoGuardian
                 case e.Reason.BlockWebProxies:
                 case e.Reason.BlockDirectIPAccess:
                 case e.Reason.BlockConsumerAccounts:
@@ -72,9 +73,9 @@ function(A, e, t) {
                 case e.Reason.X3Report:
                 case e.Reason.TeacherScene:
                 case e.Reason.Unknown:
-                    return !0;
+                    return !0; // Returns true if found a block
                 default:
-                    return !1
+                    return !1 // False if not
             }
         }
 
@@ -213,3 +214,70 @@ function(A, e, t) {
             o(U) || (U = e.SourceType.Unknown);
             var _ = A.get("rs");
             s(_) || (_ = e.Reason.Unknown);
+            var F = b("sci", A, "siteCategoryID"), // Creating all variables for the possible block categories. 
+                E = b("api", A, "adminPolicyID"),
+                I = b("afi", A, "adminFilterID"),
+                H = b("pfi", A, "parentFilterID"),
+                k = b("tsi", A, "teacherSceneID"),
+                S = b("tsfi", A, "teacherSceneFilterID"),
+                T = A.get("x3rpi"),
+                x = A.getAll("tsans");
+            if (x.length && x.some(A => !A)) throw new Error("invalid value in teacherSessionAdminNames, idx: ".concat(x.indexOf(""))); // Unsure what idx is. I've pretty sure I've seen it before.
+            return c(c(c(c(c(c(c(c(c(c({
+                orgID: B,
+                originalURL: Q,
+                sourceType: U,
+                reason: _
+            }, C && {
+                rawOriginalURL: C // They are assigned here
+            }), F && {
+                siteCategoryID: F
+            }), E && {
+                adminPolicyID: E
+            }), I && {
+                adminFilterID: I
+            }), H && {
+                parentFilterID: H
+            }), T && {
+                x3ReportPublicID: T
+            }), k && {
+                teacherSceneID: k
+            }), S && {
+                teacherSceneFilterID: S
+            }), !!x.length && {
+                teacherSessionAdminNames: x
+            }), !!v.length && {
+                validationErrors: v
+            })
+        }
+        var f, g, B, p, m = A => isNaN(A) || A % y != 0 || A < 0 ? "invalid orgId" : A / y == 0 && "".concat("invalid orgId", " (0 value)"),
+            b = (A, e, t) => {
+                var n = e.get(A),
+                    r = Number(n);
+                if (null !== n && isNaN(r) || r < 0) throw new Error("error parsing ".concat(t, "; not a valid number"));
+                return r
+            },
+            Q = "blocked.goguardian.com",
+            C = "staging-blocked.goguardian.com";
+        e.SourceType = void 0, (f = e.SourceType || (e.SourceType = {})).ChromiumM = "chromium-m", f.CIP = "cip", f.NA = "na", f.Shield = "shield", f.Unknown = "unknown", e.Reason = void 0, (g = e.Reason || (e.Reason = {})).BlockWebProxies = "BLOCK_WEB_PROXIES", g.BlockDirectIPAccess = "BLOCK_DIRECT_IP_ACCESS", g.BlockConsumerAccounts = "BLOCK_CONSUMER_ACCOUNTS", g.AdminSiteFilter = "ADMIN_SITE_FILTER", g.AdminSiteCategoryFilter = "ADMIN_SITE_CATEGORY_FILTER", g.AdminSafeMode = "ADMIN_SAFE_MODE", g.ParentSiteFilter = "PARENT_SITE_FILTER", g.ParentPause = "PARENT_PAUSE", g.ParentScheduledPause = "PARENT_SCHEDULED_PAUSE", g.X3Report = "X3_REPORT", g.TeacherScene = "TEACHER_SCENE", g.Unknown = "UNKNOWN", e.Environment = void 0, (B = e.Environment || (e.Environment = {}))[B.Production = 0] = "Production", B[B.Staging = 1] = "Staging",
+            function(A) {
+                A.Sum = "sum", A.Ctx = "ctx"
+            }(p || (p = {}));
+        var y = 1234567,
+            v = Number.MAX_SAFE_INTEGER / y,
+            U = {
+                1: d
+            },
+            _ = n.Buffer.from && n.Buffer.alloc && n.Buffer.allocUnsafe && n.Buffer.allocUnsafeSlow ? n.Buffer.from : A => new n.Buffer(A);
+
+        function F(A, e) {
+            var t = (A, t) => e(A, t) >>> 0;
+            return t.signed = e, t.unsigned = t, t.model = A, t
+        }
+        F("crc1", (function(A, e) { // CRC1 starts here
+            n.Buffer.isBuffer(A) || (A = _(A));
+            for (var t = ~~e, r = 0, i = 0; i < A.length; i++) {
+                r += A[i]
+            }
+            return (t += r % 256) % 256
+        }));
