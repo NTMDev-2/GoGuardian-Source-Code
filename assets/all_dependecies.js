@@ -19,3 +19,35 @@ e.YOUTUBE_PLAYER_STATES={UNSTARTED:-1,ENDED:0,PLAYING:1,PAUSED:2,BUFFERING:3,VID
 sidebar:["#related","#sidebar","#watch7-sidebar-contents","ytm-item-section-renderer[section-identifier='related-items']"],liveChat:["#chat","#chat-messages","#watch-sidebar-live-chat"]},e.URL_SCHEME_MATCHING_REGEX=new RegExp("^(?:[a-z]+:)?//","i"),
 e.LOCALSTORAGE_ENDPOINT="https://localstorage.goguardian",e.PRIVACY_BUBBLE_STATE_STORAGE_KEY="privacy-bubble-state",e.PRIVACY_BUBBLE_POSITIONING_INTERVAL=5e3,e.SCREENSHOT_HOSTNAME_BLOCKLIST=["bing.com","www.youtube.com","pornhub.com","*.pornhub.com","app.schoology.com"],
 e.SCREENSHOT_SINGLE_SHOT_HOSTNAME_LIST=["google.com"],e.SCREENSHOT_THROTTLE_MS=5e3})
+
+/* 
+"use strict": [AI DEFINITION] A directive introduced in ECMAScript 5 (ES5) that enables strict mode, a restricted variant of JavaScript that helps developers write safer, more error-free code.
+__esModule: [AI DEFINITION] To identify a module as an ES Module (ESM). ES allows you to split your code into separate files that can specifically export functions or variables to be used by other files via the import statement. Set to True, or !0.
+BLOCK_PAGE_HOSTNAME: This is the host URL where goguardian redirects you (blocked.goguardian.com). 
+CONFIDENCE: This is how confident GoGuardian is with the evaluation on how "bad" the website is. {NONE:0,MEDIUM:.5,HIGH:.7,VERY_HIGH:.9} Each of these are a seperate percentage value.
+UNCATEGORIZED_CATEGORY: [MOST LIKELY DEFINITION] How many websites do not have a category. An example website with an example category would be crazygames.com, video games / entertainment.
+HOSTED_DOMAINS: [MOST LIKELY DEFINITION] Very specific websites that are blocked. I believe most of the websites can host proxies or are games, like scratch. 
+WEBSOCKET_CONFIG_ENDPOINT: [UNKNOWN USUAGE] 
+WEBSOCKET_ENDPOINT: [UNKNOWN USUAGE] The host for WEBSOCKET_CONFIG_ENDPOINT.
+WEBSOCKET_HTTP_ENDPOINT: [UNKNOWN USUAGE] The host for WEBSOCKET_CONFIG_ENDPOINT, but using the HTTP web scheme.
+WEBSOCKET_INIT_RETRY_DELAY_MAX: How many seconds at maximum the function caller will try to reach WEBSOCKET_CONFIG_ENDPOINT. This is set to 10,000, or 1e4.
+ENTITIES_WEBSOCKET_PATH: [UNKNOWN USUAGE]
+ENTITIES_MUTATION_WINDOW_MS: [UNKNOWN USUAGE] Set to 10,800,000, or 108e5.
+CONTENT_ANALYSIS_INTERVAL: [UNKNOWN USUAGE]
+TEACHER_CONFIG_ENDPOINT: The final destination of all data collected by GoGuardian Teacher, one of GoGuardian's products for student moderation.
+TEACHER_WS_ADDR: [MOST LIKELY DEFINITION] The wss:// endpoint of GoGuardian Teacher. Identical to WEBSOCKET_CONFIG_ENDPOINT.
+OFF_TASK_ALERTS_URL: This is where all alerts/reports/logs for a student being "off task", or on an undesginated app/website, end up. 
+EXTENSION_IFRAME_ENDPOINT: A patch for all <iframe> HTML exploits. This is why most bypasses on r/GoGuardian do not work anymore. 
+GOOGLE_DOCS_HOSTAME: May be a patch to a previous exploit using Google Docs. I am unsure what this exploit actually was, since I have came across no documentation.
+GOOGLE_DOCS_SELECTORS: [UNKNOWN USUAGE] Most likely headers for the exploit.
+GOOGLE_DOCS_URL: The URL for a Google Doc.
+GDOC_ENABLED_FOR_MOBILE_BASIC: [UNKNOWN USUAGE] Set to False.
+CONTENT_FETCHER_ENDPOINT: [UNKNOWN USUAGE]
+LOCATION_CHANGE_EVENT: [MOST LIKELY DEFINITION] This is probably referring to some ID to track the location of a student device. However, I believe this is illegal and is infringement of student privacy.
+LOGS_ENDPOINT: Where all GoGuardian logs go to. 
+POLICY_ENDPOINT: [UNKNOWN USUAGE]
+POLICY_FETCH_INTERVAL: [UNKNOWN USUAGE] Most likely how fast GoGuardian retrieves information from POLICY_ENDPOINT. Set to 900,000, or 9e5.
+POLICY_SESSION_STORAGE_KEY: 
+
+
+
