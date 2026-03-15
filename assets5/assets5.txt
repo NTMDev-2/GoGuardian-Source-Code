@@ -1,4 +1,4 @@
-This is the fifth and last part of GoGuardian's source code, after its Fouth license:
+This is the fifth and last part of GoGuardian's main source code, after its Fouth license:
 /*!
  * Snowball JavaScript Library v0.3
  * http://code.google.com/p/urim/
