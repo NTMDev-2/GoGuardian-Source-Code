@@ -1,5 +1,6 @@
 # GoGuardian-Source-Code
 **THIS IS ONLY A FRONT-END LEAK**
+
 GoGuardian has been terroizing students from Day 1. 
 
 When a kid wants to play a game, or maybe accidentally search up a "flagged term", GoGuardian will scrutinize every bit of it. 
