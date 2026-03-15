@@ -1,4 +1,4 @@
-This is the second part of GoGuardian's source code, after its First license:
+This is the second part of GoGuardian's main source code, after its First license:
 /*!
  * The buffer module from node.js, for the browser.
  *
