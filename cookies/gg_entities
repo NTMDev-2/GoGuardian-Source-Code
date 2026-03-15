@@ -1,0 +1,11 @@
+gg_entities GoGuardian cookie, leaked here.
+
+https://blocked.goguardian.com{
+  entity{
+    favicon_url: "https://blocked.goguardian.com/assets/lock-icon.png" (The image for the lock on the Restricted page)
+    title: "Restricted"
+    url: "https://blocked.goguardian.com/"
+  }
+  viewings{...} (Unknown usuage. The times shown in here do not have any corellation with the System time)
+  id: {...} (Hidden due to privacy reasons. Unsure if this contains sensitive data about the device I am using)
+}
