@@ -47,7 +47,19 @@ LOCATION_CHANGE_EVENT: [MOST LIKELY DEFINITION] This is probably referring to so
 LOGS_ENDPOINT: Where all GoGuardian logs go to. 
 POLICY_ENDPOINT: [UNKNOWN USUAGE]
 POLICY_FETCH_INTERVAL: [UNKNOWN USUAGE] Most likely how fast GoGuardian retrieves information from POLICY_ENDPOINT. Set to 900,000, or 9e5.
-POLICY_SESSION_STORAGE_KEY: 
+POLICY_SESSION_STORAGE_KEY: Where GoGuardian stores it session data, using cookies inside the webpage.
+EXTERNAL_ENDPOINT: [UNKNOWN USUAGE]
+BEACON_MAX_CONTENT_BUFFER: [UNKNOWN USUAGE] Set to 20
+BEACON_PREDICT_ENDPOINT: [MOST LIKELY DEFINITION] This is the place where GoGuardian starts all of its predictions for what is harmful to the student or not. 
+BEACON_PREDICT_TIMEOUT_MS: [MOST LIKELY DEFINITION] This is probably a cooldown/fallback for GoGuardian Beacon during its predictions. Set to 15,000, or 15e3. Equivalent to 15 seconds.
+BEACON_REPORT_ENDPOINT: Where all logs of harmful content are reported/logged.
+BEACON_REPORT_TIMEOUT_MS: [MOST LIKELY DEFINITION] This is probably also a cooldown for the reporting function. Set to 15,000, or 15e3. Equivalent to 15 seconds.
+BEACON_UPLOAD_ENDPOINT: Where beacon uploads it content. Unknown difference between BEACON_REPORT_ENDPOINT.
+BEACON_SETTINGS_ENDPOINT: [UNKNOWN USUAGE] Set to POLICY_ENDPOINT+"/beacon", or "https://policy.goguardian/beacon". 
+BEACON_SETTINGS_DEBOUNCE_INTERVAL_MS: [UNKNOWN USUAGE] Set to 5,000, or 5e3.
+SMART_ALERTS_MAX_CONTENT_BUFFER: This maybe means how much content or websites Smart Alerts has cached into its history before it starts using garbage collection to free up more space. Set to 20.
+SMART_ALERTS_IS_ALLOWLISTED_ENDPOINT: Checks if Smart Alerts is enabled. 
+
 */
 
 
