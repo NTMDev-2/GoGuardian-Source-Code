@@ -58,7 +58,11 @@ BEACON_UPLOAD_ENDPOINT: Where beacon uploads it content. Unknown difference betw
 BEACON_SETTINGS_ENDPOINT: [UNKNOWN USUAGE] Set to POLICY_ENDPOINT+"/beacon", or "https://policy.goguardian/beacon". 
 BEACON_SETTINGS_DEBOUNCE_INTERVAL_MS: [UNKNOWN USUAGE] Set to 5,000, or 5e3.
 SMART_ALERTS_MAX_CONTENT_BUFFER: This maybe means how much content or websites Smart Alerts has cached into its history before it starts using garbage collection to free up more space. Set to 20.
-SMART_ALERTS_IS_ALLOWLISTED_ENDPOINT: Checks if Smart Alerts is enabled. 
+SMART_ALERTS_IS_ALLOWLISTED_ENDPOINT: Checks if Smart Alerts is enabled. By checking the website and using Inspect menu to display network requests, you will see a GET request. If this returns 404, Smart Alerts is not enabled.
+SMART_ALERTS_V3_PREDICT_ENDPOINT: The website endpoint for Smart Alerts predictions.
+SMART_ALERTS_PREDICT_ENDPOINT: Possibly an older version, since the other link says "V3", suggesting an improved prediction system.
+SMART_ALERTS_PREDICT_PROXY_ENDPOINT: 
+
 
 */
 
