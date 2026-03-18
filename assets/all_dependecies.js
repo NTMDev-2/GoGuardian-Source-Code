@@ -72,7 +72,16 @@ SMART_ALERTS_PREDICTOR_CATEGORY: Probably the possible categories that smart ale
 SMART_ALERTS_MAX_CACHE_TIMEOUT: [UNKNOWN USUAGE] Set to 60.
 SMART_ALERTS_REPORT_ENDPOINT: [UNKNOWN USUAGE]
 SMART_ALERTS_REPORT_PROBABILITY_THRESHOLD: This is how high the CONFIDENCE value has to be for Smart Alerts to report the current webpage. The CONFIDENCE interval must be at least at MEDIUM, which is set to 0.5. 
-SMART_ALERTS_REPORT_TIMEOUT_MS: [MOST LIKELY DEFINITION] How long Smart Alerts can be unresponsive 
+SMART_ALERTS_REPORT_TIMEOUT_MS: [MOST LIKELY DEFINITION] How long Smart Alerts reporting system can be unresponsive. This is set to 10,000, or 1e4.
+SMART_ALERTS_UPLOAD_ENDPOINT: This is where all Smart Alert uploads go to. I do not know the difference between a "report" and an "upload".
+YOUTUBE_FILTER_ELEMENT_ID: This is the ID inside the HTML tag to display the custom block screen on youtube videos. This cannot be traced to the source code of the blocking, however it is documented here.
+YOUTUBE_HOSTNAME_REGEXES: This is to prevent any bypass using a slightly different youtube link, since this regex will match all youtube domains and subdomains.
+YOUTUBE_MOBILE_HOSTNAME: What the Youtube link is if you use Mobile mode.
+YOUTUBE_PLAYER_CRITICAL_METHODS: These are all of the meta data that GoGuardian needs to block your video.
+YOUTUBE_PLAYER_STATES: These are all of the possible states the Youtube video can be in.
+YOUTUBE_SELECTORS: The different elements on the youtube site.
+URL_SCHEME_MATCHING_REGEX: To match all different URL scheme. A URL scheme is what starts all URLS, "https" is probably the most common and widely used.
+LOCALSTORAGE_ENDPOINT: [UNKNOWN USUAGE]
 
 
 */
