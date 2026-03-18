@@ -82,8 +82,12 @@ YOUTUBE_PLAYER_STATES: These are all of the possible states the Youtube video ca
 YOUTUBE_SELECTORS: The different elements on the youtube site.
 URL_SCHEME_MATCHING_REGEX: To match all different URL scheme. A URL scheme is what starts all URLS, "https" is probably the most common and widely used.
 LOCALSTORAGE_ENDPOINT: [UNKNOWN USUAGE]
-
-
+PRIVACY_BUBBLE_STATE_STORAGE_KEY: [UNKNOWN USUAGE]
+PRIVACY_BUBBLE_POSITIONING_STORAGE_KEY: [UNKNOWN USUAGE]
+PRIVACY_BUBBLE_POSITION_INTERVAL: [UNKNOWN USUAGE] Set to 5,000, or 5e3.
+SCREENSHOT_HOSTNAME_BLOCKLIST: [MOST LIKELY DEFINITION] This is the list of possible hosts for websites and search engines. However, I don't understand the "SCREENSHOT_BLOCKLIST" meaning. Does it mean I can't take a screenshot here? Or does it mean something else, like those pages are blocked?
+SCREENSHOT_SINGLE_SHOT_HOSTNAME_LIST: [UNKNOWN USUAGE] Set to ONLY "google.com"
+SCREENSHOT_THROTTLE_MS: [UNKNOWN USUAGE] Set to 5,000, or 5e3.
 */
 
 
