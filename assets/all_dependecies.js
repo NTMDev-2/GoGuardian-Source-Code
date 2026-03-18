@@ -24,13 +24,17 @@ e.SCREENSHOT_SINGLE_SHOT_HOSTNAME_LIST=["google.com"],e.SCREENSHOT_THROTTLE_MS=5
 "use strict": [AI DEFINITION] A directive introduced in ECMAScript 5 (ES5) that enables strict mode, a restricted variant of JavaScript that helps developers write safer, more error-free code.
 __esModule: [AI DEFINITION] To identify a module as an ES Module (ESM). ES allows you to split your code into separate files that can specifically export functions or variables to be used by other files via the import statement. Set to True, or !0.
 BLOCK_PAGE_HOSTNAME: This is the host URL where goguardian redirects you (blocked.goguardian.com). 
-CONFIDENCE: This is how confident GoGuardian is with the evaluation on how "bad" the website is. {NONE:0,MEDIUM:.5,HIGH:.7,VERY_HIGH:.9} Each of these are a seperate percentage value.
-UNCATEGORIZED_CATEGORY: [MOST LIKELY DEFINITION] How many websites do not have a category. An example website with an example category would be crazygames.com, video games / entertainment.
+CONFIDENCE: This is how confident GoGuardian is with the evaluation on how "bad" the website is. {NONE:0,MEDIUM:.5,HIGH:.7,VERY_HIGH:.9} Each of these are a seperate percentage value. It is unknown how this is actually evaluated. Most likely through AI.
+UNCATEGORIZED_CATEGORY: [MOST LIKELY DEFINITION] How many websites do not have a category. An example website with an example category would be crazygames.com, video games or entertainment.
 HOSTED_DOMAINS: [MOST LIKELY DEFINITION] Very specific websites that are blocked. I believe most of the websites can host proxies or are games, like scratch. 
 WEBSOCKET_CONFIG_ENDPOINT: [UNKNOWN USUAGE] 
 WEBSOCKET_ENDPOINT: [UNKNOWN USUAGE] The host for WEBSOCKET_CONFIG_ENDPOINT.
 WEBSOCKET_HTTP_ENDPOINT: [UNKNOWN USUAGE] The host for WEBSOCKET_CONFIG_ENDPOINT, but using the HTTP web scheme.
 WEBSOCKET_INIT_RETRY_DELAY_MAX: How many seconds at maximum the function caller will try to reach WEBSOCKET_CONFIG_ENDPOINT. This is set to 10,000, or 1e4.
+WEBSOCKET_MAX_CONNECTION_RETRIES: How many times GoGuardian can attempt to connect to websocket. This is set to 3. 
+ENTITIES_FLUSH_INTERVAL: [UNKNOWN USUAGE] Set to 5,000, or 5e3. 
+ENTITIES_SESSION_STORAGE_KEY: This is the session cookie that Goguardian uses to store all of its current session data and everything about the device details and website details.
+ENTITIES_UPDATE_VIEWING_INTERVAL: [UNKNOWN USUAGE] Set to 10,000, or 1e4.
 ENTITIES_WEBSOCKET_PATH: [UNKNOWN USUAGE]
 ENTITIES_MUTATION_WINDOW_MS: [UNKNOWN USUAGE] Set to 10,800,000, or 108e5.
 CONTENT_ANALYSIS_INTERVAL: [UNKNOWN USUAGE]
@@ -61,7 +65,14 @@ SMART_ALERTS_MAX_CONTENT_BUFFER: This maybe means how much content or websites S
 SMART_ALERTS_IS_ALLOWLISTED_ENDPOINT: Checks if Smart Alerts is enabled. By checking the website and using Inspect menu to display network requests, you will see a GET request. If this returns 404, Smart Alerts is not enabled.
 SMART_ALERTS_V3_PREDICT_ENDPOINT: The website endpoint for Smart Alerts predictions.
 SMART_ALERTS_PREDICT_ENDPOINT: Possibly an older version, since the other link says "V3", suggesting an improved prediction system.
-SMART_ALERTS_PREDICT_PROXY_ENDPOINT: 
+SMART_ALERTS_PREDICT_PROXY_ENDPOINT: [UNKNOWN USUAGE]
+SMART_ALERTS_PREDICT_TIMEOUT: [UNKNOWN USUAGE] Set to 15,000, or 15e3.
+SMART_ALERTS_PROXY_PREDICT_TIMEOUT_MS: [UNKNOWN USUAGE] Set to 15,000, or 15e3.
+SMART_ALERTS_PREDICTOR_CATEGORY: Probably the possible categories that smart alerts can predict. Set to a table with contents {"proxy", "x3"}. Unknown what "x3" means. 
+SMART_ALERTS_MAX_CACHE_TIMEOUT: [UNKNOWN USUAGE] Set to 60.
+SMART_ALERTS_REPORT_ENDPOINT: [UNKNOWN USUAGE]
+SMART_ALERTS_REPORT_PROBABILITY_THRESHOLD: This is how high the CONFIDENCE value has to be for Smart Alerts to report the current webpage. The CONFIDENCE interval must be at least at MEDIUM, which is set to 0.5. 
+SMART_ALERTS_REPORT_TIMEOUT_MS: [MOST LIKELY DEFINITION] How long Smart Alerts can be unresponsive 
 
 
 */
